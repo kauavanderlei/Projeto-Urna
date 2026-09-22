@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Essa parte do código eu usei como recurso auxiliar a Inteligência Artificial, basicamente esse cógigo é responável por remover as setas dos inputs nos navegadores baseados em WebKit (Chrome, Safari, Edge, Opera) */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove as setas no Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.header-title {
+    text-align: center;
+    margin: 50px;
+}
+
+.principal {
+    background-color: #dad4c8;
+    width: 990px;
+    height: 420px;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tela-urna {
+    background-color: white;
+    width: 550px;
+    height: 320px;
+    border: 1px solid #3f3b3a;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+}
+
+.simulacao {
+    color: #7c7979;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 225px;
+    margin-top: 5px;
+}
+
+.simulacao img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.teclado-urna {
+    background-color: #3F3B3A;
+    width: 290px;
+    height: 320px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 50px;
+}
+
+.input {
+    width: 100%;
+    height: 120px;
+    padding: 5px;
+    padding-bottom: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: 26px;
+    color: #353131;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.input input {
+    width: 26px;
+    height: 31px;
+    display: inline-block;
+    border: 1px solid #333;
+    line-height: 31px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.grid-buttons {
+    width: 100%;
+    height: 240px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.teclas {
+    width: 55px;
+    height: 40px;
+    background-color: #373332;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: -1px 1px 4px 0px #000;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.botao {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#branco {
+    margin-left: 15px;
+    width: 75px;
+    height: 40px;
+    font-size: 11px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px #9FA09B;
+}
+
+#corrigir {
+    width: 75px;
+    height: 40px;
+    font-size: 11px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    background-color: #f1934a;
+    box-shadow: 0px 0px 3px #f1934a;
+}
+
+#confirmar {
+    margin-right: 15px;
+    width: 75px;
+    height: 40px;
+    font-size: 11px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    background-color: #40C373;
+    box-shadow: 0px 0px 3px #40C373;
+}
