@@ -117,6 +117,11 @@ input[type=number] {
     cursor: pointer;
 }
 
+.teclas:hover {
+    background-color: #322e2d;
+    transition: 100ms;
+}
+
 .botao {
     display: flex;
     justify-content: space-between;
@@ -131,7 +136,12 @@ input[type=number] {
     border-radius: 10px;
     border-style: none;
     cursor: pointer;
-    box-shadow: 0px 0px 3px #9FA09B;
+    background-color: #dcded4;
+}
+
+#branco:hover {
+    background-color: #fff;
+    transition: 100ms;
 }
 
 #corrigir {
@@ -142,7 +152,11 @@ input[type=number] {
     border-style: none;
     cursor: pointer;
     background-color: #f1934a;
-    box-shadow: 0px 0px 3px #f1934a;
+}
+
+#corrigir:hover {
+    background-color: #ff8425;
+    transition: 100ms;
 }
 
 #confirmar {
@@ -154,5 +168,9 @@ input[type=number] {
     border-style: none;
     cursor: pointer;
     background-color: #40C373;
-    box-shadow: 0px 0px 3px #40C373;
+}
+
+#confirmar:hover {
+    background-color: #2aff7c;
+    transition: 100ms;
 }
