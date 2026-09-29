@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login com CPF</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <h2>Acesso à página de votação</h2>
+
+        {% if erro %}
+            <p class="erro">{{ erro }}</p>
+        {% endif %}
+
+        <form method="POST" action="{{ url_for('login') }}">
+
+            <div class="input-group">
+
+                <label for="cpf">CPF</label>
+
+                <input
+                    type="text"
+                    id="cpf"
+                    name="cpf"
+                    placeholder="000.000.000-00"
+                    maxlength="14"
+                    required
+                >
+
+            </div>
+
+            <button type="submit" class="btn-entrar">
+                Entrar
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+<script src="static/script.js"></script>
+
+</html>
